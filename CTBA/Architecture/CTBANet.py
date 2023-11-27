@@ -249,14 +249,14 @@ class Block(nn.Module):
         self.convdw3 = ConvDW3x3(768)
         self.attention_norm = LayerNorm(config.hidden_size, eps=1e-6)
         self.ffn_norm = LayerNorm(config.hidden_size, eps=1e-6)
-        self.attn = Attention(config, vis)
+        self.Ms_attn = Attention(config, vis)
         self.res = ResPath(768,1)
 
     def forward(self, x):
         Q = self.convdw1(x)
         K = self.convdw2(x)
         V = self.convdw2(x)
-        y , weights = self.attn(Q,K,V)
+        y , weights = self.Ms_attn(Q,K,V)
         y = x + y
         y = self.res(y)
         return y, weights
