@@ -1,12 +1,14 @@
-torch
-torchvision
+thop
+medpy
+tensorboardX
+ml_collections
 numpy
 tqdm
 tensorboard
 tensorboardX
 ml-collections
 medpy
-SimpleITK
+simpleitk
 scipy
 h5py
 timm
