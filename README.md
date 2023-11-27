@@ -2,7 +2,7 @@
 CTBANet: Convolution Transformers and Bidirectional Attention for Medical Image Segmentation
 
 ### 2.Prepare data
-Please refer to /home/featurize/work/4DA/DA-TransUnet/DA-TransUNet/DA-TransUNet/datasets/README.md
+CTBANet/CTBA/datasets/README.md
 
 ### 3.Environment
 Please prepare an environment with python=3.7(conda create -n envir python=3.7.12), and then use the command "pip install -r requirements.txt" for the dependencies.
